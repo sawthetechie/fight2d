@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+#player1secondparent, #player2secondparent {
+    background-color: yellow; 
+    height: 50px;
+    width: 100%;
+}
+#timer{
+    background-color: silver;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-family: 'VT323', monospace;
+}
+
+.player1parent ,.player2parent{
+    position:relative;
+    height: 50px;
+    width: 100%;
+}
+
+.player1parent{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#displayResult{
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+}
+
+input{
+    background-color: gray;
+    color: black;
+    cursor: grab;
+    border-radius: 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5% 0;
+    border: 2px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.5);
+}
+
+input:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.9);
+    padding: 18px 35px;
+    color: white;
+}

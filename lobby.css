@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.gametitle{
+    font-size: 140px;
+    font-family: 'VT323', monospace;
+}
+input[type="submit"] {
+    background-color: gray;
+    color: black;
+    border-radius: 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5% 0;
+    border: 2px solid gray;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.5);
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(255,255,255,0.9);
+    padding: 18px 35px;
+    color: white;
+}
+
+.buttons{
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons i{
+    padding: 1vh;
+}
+
+.aboutus, .helpindex{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid white;
+    top:25vh;
+    left: 25vh;
+    right: 25vh;
+    bottom: 25vh;
+    display: none;
+    padding: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#close{
+    display: none;
+}
+
+.player1control, .player2control{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    border: 1px solid gray;
+    line-height: 1.8;
+}
+
+.player1control h1, .player2control h1{
+    font-size: 25px;
+    color: gray;
+}
