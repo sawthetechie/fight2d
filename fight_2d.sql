@@ -49,9 +49,6 @@ CREATE TABLE `gamesession` (
 -- Dumping data for table `gamesession`
 --
 
-INSERT INTO `gamesession` (`gameId`, `player1`, `player2`, `winner`, `loser`) VALUES
-(13, 'test2', 'test3', 'test3', 'test2'),
-(14, 'test2', 'test3', 'test3', 'test2');
 
 --
 -- Triggers `gamesession`
@@ -93,10 +90,6 @@ CREATE TABLE `player_details` (
 -- Dumping data for table `player_details`
 --
 
-INSERT INTO `player_details` (`p_username`, `p_email`, `p_password`) VALUES
-('samundra', 'doxsnix8855@gmail.com', '123456789'),
-('test2', 'doxsnix8855@gmail.com', 'test23456'),
-('test3', 'doxsnix8855@gmail.com', 'test23456');
 
 --
 -- Triggers `player_details`
@@ -125,10 +118,6 @@ CREATE TABLE `player_stats` (
 -- Dumping data for table `player_stats`
 --
 
-INSERT INTO `player_stats` (`p_username`, `matchPlayed`, `matchWon`, `matchLost`) VALUES
-('samundra', 0, 0, 0),
-('test2', 2, 0, 2),
-('test3', 2, 2, 0);
 
 --
 -- Indexes for dumped tables
