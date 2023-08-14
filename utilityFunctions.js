@@ -6,7 +6,7 @@ function collision(player1, player2){
     )
 }
 
-function timer(){
+function timer(time){
     if(time > 0){
         timerId = setTimeout(timer,1000);
         time--;

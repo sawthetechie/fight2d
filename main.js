@@ -191,13 +191,13 @@ const keys ={
 
 let lastkeyPressed;
 
-let time = 10;
+let time = 60;
 let ScoreBox = document.querySelector('#displayResult')
 let ScoreText = document.querySelector('#Fresult');
 let timerId;
 let finalResultedNotEntered = true;
 
-timer();
+timer(time);
 
 
 
