@@ -40,8 +40,8 @@ function finalResult(player1, player2, timerId){
         ScoreBox.style.display = 'flex';
         setCookie ("winner", "", 0);
         setCookie ("loser", "", 0);
-        setCookie ("winner", player2name, 600);
-        setCookie ("loser", player1name, 600);
+        setCookie ("winner", player2name, 60);
+        setCookie ("loser", player1name, 60);
     }
 }
 

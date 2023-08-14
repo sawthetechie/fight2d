@@ -62,6 +62,5 @@
 
         $insertSql = "INSERT INTO gamesession(player1, player2, winner, loser) VALUES ('$p1name','$p2name','$winner','$loser')";
         mysqli_query($conn, $insertSql);
-
     }
 ?>
