@@ -110,8 +110,8 @@
         if($checked){ 
             $searchSql1 = mysqli_query($conn, "SELECT p_username FROM player_details WHERE p_username = '$p1name' AND p_password = '$p1password';");
             $searchSql2 = mysqli_query($conn, "SELECT p_username FROM player_details WHERE p_username = '$p2name' AND p_password = '$p2password';");
-            $stat1 = mysqli_fetch_column($searchSql1);
-            $stat2 = mysqli_fetch_column($searchSql2);
+            $stat1 = mysqli_fetch_row($searchSql1);
+            $stat2 = mysqli_fetch_row($searchSql2);
             if($stat1 && $stat2){
                 echo "Successful Parson, Kakrachulation";
                 setcookie("player1", $p1name, time() + 86400);
