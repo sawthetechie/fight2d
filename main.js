@@ -7,6 +7,9 @@ canvas.height = 720;
 let player1name = getCookie("player1");
 let player2name = getCookie("player2");
 
+setCookie ("winner", "", 0);
+setCookie ("loser", "", 0);
+
 const gravity =0.5;
 const background = new Sprite({
     position: {
